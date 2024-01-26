@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Zomato.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="">
+        </div>
+        <div class="option">
+            <select name="" id="">
+                <option value="">Bangalore</option>
+                <option value="">Chennai</option>
+                <option value="">Vellore</option>
+            </select>
+        </div>
+        <div class="search">
+            <input placeholder="Search for restaurant, cuisine or a dish" class="sc-gFXMyG fEokXR" value="">
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+        <div class="login">
+            Log in
+        </div>
+        <div class="signup">
+            Sign up
+        </div>
+    </div>
+    <div class="home">
+        <div class="home1">
+            Home / India / Bengaluru Restaurant
+        </div>
+    </div>
+    <div class="image">
+        <div class="image1">
+            <img src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp" alt="">
+            Delivery
+        </div>
+        <div class="image2">
+            <img src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png?output-format=webp" alt="">
+            Dining Out
+        </div>
+        <div class="image3">
+            <img src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp" alt="">
+            Nightlife
+        </div>
+        </div>
+        <div class="navbar">
+            <div class="filter">
+                <input placeholder="Filters">
+            </div>
+            <div class="rating">
+                <input placeholder="Rating:4.0+">
+            </div>
+            <div class="pure">
+                <input placeholder="Pure Veg">
+            </div>
+            <div class="cuisines">
+                <input placeholder="Cuisines">
+            </div>
+        </div>
+            <div class="title">
+                Inspiration for your first order
+            </div>
+            <div class="items">
+                <div class="items2">
+                    <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="">
+                    <div class="h2">
+                        Pizza
+                    </div>
+                </div>
+                <div class="items1">
+                    <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png" alt="">
+                    <div class="h1">
+                        Briyani
+                    </div>
+                </div>
+                <div class="items1">
+                    <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png" alt="">
+                    <div class="h1">
+                        Burger
+                    </div>
+                </div>
+                <div class="items1">
+                    <img src="https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png" alt="">
+                    <div class="h1">
+                        Cake
+                    </div>
+                </div>
+                <div class="items1">
+                    <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" alt="">
+                    <div class="h1">
+                        Chicken
+                    </div>
+                </div>
+                <div class="items1">
+                    <img src="https://b.zmtcdn.com/data/o2_assets/fc641efbb73b10484257f295ef0b9b981634401116.png" alt="">
+                    <div class="h1">
+                        Sandwich
+                    </div>
+                </div>
+            </div>
+            <div class="brand">
+                Top brands for you
+            </div>
+
+            <div class="ig">
+                <div class="ig2">
+                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/ec72c289aa01d947fe15a009ce8e559f_1616052816.png?output-format=webp" alt="">
+                 <div class="ih1">
+                    Meghana Foods
+                 </div>
+                 <div class="ij1">
+                    24 min
+                 </div>
+                </div>
+                <div class="ig1">
+                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/7a7904eff687a7456599074a4e7d2335_1617875100.png?output-format=webp" alt="">
+                 <div class="ih">
+                    Empire Restaurant
+                 </div>
+                 <div class="ij">
+                    27 min
+                 </div>
+                </div>
+                <div class="ig1">
+                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/1a985408ca7ad8fd097f2c47db9c5cb6_1611252598.png?output-format=webp" alt="">
+                 <div class="ih">
+                    Domino's Pizza
+                 </div>
+                 <div class="ij">
+                    28 min
+                 </div>
+                </div>
+                <div class="ig1">
+                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/3d80cb89fca9e212f7dab2c1914ebd8f_1643983621.png?output-format=webp" alt="">
+                 <div class="ih">
+                    McDonald's
+                 </div>
+                 <div class="ij">
+                    21 min
+                 </div>
+                </div>
+                <div class="ig1">
+                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617187721.png?output-format=webp" alt="">
+                 <div class="ih">
+                    Burger King
+                 </div>
+                 <div class="ij">
+                    34 min
+                 </div>
+                </div>
+                <div class="ig1">
+                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/239f872f52291fe253a37cc8dd16188f_1663838300.png?output-format=webp" alt="">
+                 <div class="ih">
+                    Truffles
+                 </div>
+                 <div class="ij">
+                    21 min
+                 </div>
+                </div>                
+            </div>
+        <div class="tt">
+            Bengaluru Restaurants
+        </div>
+        <div class="main">
+            <div class="main2">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/2/50502/7a0aa9db2460a1da9d8dd346ad732c4e_o2_featured_v2.jpg?output-format=webp" alt="">
+            <div class="m2">
+                Imperial Restaurant - Since 1954
+            </div>
+            <div class="n2">
+                North Indian, Mughlai,...
+                <span>₹150 for one</span>
+            </div>
+            <div class="l1">
+                24 min
+            </div>
+            </div>
+            <div class="main1">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/2/50382/46ab03171d9eec9cc24d2067569ef485_o2_featured_v2.jpg?output-format=webp" alt="">
+           <div class="m1">
+            Domino's Pizza
+           </div>
+           <div class="n1">
+            Pizza,Fast Food,Italian
+            <span>₹150 for one</span>
+            </div>        
+           <div class="l2">
+            28 min
+           </div>
+            </div>
+            <div class="main1">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/1/60551/60afc26a8d420799fc8bc7e27c968951_o2_featured_v2.jpg?output-format=webp" alt="">
+            <div class="m1">
+                Leon's Burgers & Wings
+            </div>
+            <div class="n1">
+                Burger, Fast Food, Wraps
+                <span>₹150 for one</span>
+            </div>
+            <div class="l2">
+                31 min
+            </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
